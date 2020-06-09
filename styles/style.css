@@ -1,0 +1,150 @@
+html {
+    box-sizing: border-box;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+body{
+    /*background-color: #EBC0CC;*/
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Poiret One', cursive;
+    background-image: url(../images/hypnotize.png);
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 90%;
+    border: 2px solid rgb(82, 67, 71);
+}
+@media (min-width: 40em)
+{
+    body 
+    {
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 70em)
+{
+    body 
+    {
+        font-size: 24px;
+    }
+
+}
+
+header{
+    background-color: rgb(185, 165, 162);
+    padding: 20px;
+}
+
+header a{
+    display: block;
+    width: 100%;
+}
+.header-content
+{
+    font-size: 0;
+    width: 100%;
+    background-color: rgb(223, 209, 205);
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid  rgb(82, 67, 71);
+}
+
+img{
+    display: inline-block;
+    height:60px;
+}
+
+h1{
+    margin: 0;
+    display: inline-block;
+    font-family: Caveat;
+    color: rgb(82, 67, 71);
+    text-shadow: 2px 1px 3px rgb(34, 34, 34);
+    font-size: 70px;
+}
+
+@media (min-width: 70em)
+{    
+    h1 
+    {
+        font-size: 80px;
+    }
+}
+
+ul.navigation-panel{
+    padding: 10px;
+    display: flex;
+    list-style: none;
+    background-color: rgb(185, 165, 162);
+}
+p, li{
+    line-height: 2;
+    letter-spacing: 1px;
+}
+.navigation-panel li
+{
+    width: 33.33%;
+    padding: 0;
+    background-color: rgb(223, 209, 205);
+    border: 2px solid rgb(82, 67, 71);
+    text-align: center;
+}
+.navigation-panel a
+{
+    width: 100%;
+    font-size: 20px;
+    color: rgb(82, 67, 71);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.navigation-panel a:hover, .header-content:hover{
+    background-color: white;
+}
+
+@media (min-width: 40em)
+{    
+    .navigation-panel a
+    {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 70em)
+{    
+    .navigation-panel a
+    {
+        font-size: 40px;
+    }
+}
+
+main
+{
+    background-color:rgb(185, 165, 162);
+    padding: 20px;
+}
+
+article{
+    border: 2px solid rgb(82, 67, 71);;
+    padding: 30px;
+    background-color: rgb(240, 226, 222);;
+}
+
+article h2 
+{
+    margin: 0;
+}
+
+footer
+{
+    margin: 0;
+    background-color:rgb(185, 165, 162);
+}
