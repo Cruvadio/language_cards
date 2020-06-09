@@ -1,22 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <title>Моя тестовая страница</title>
+    <title>Главная страница</title>
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Poiret+One&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Language cards</h1>
-    <img src="images/american-flag-png-circle-6-original.png" alt="Иконки стран">
-    <p>Lorem <strong> dolor sit amet, </strong>consectetur adipiscing elit, sed do eiusmod tempor<em> <strong> incididunt</strong></em> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <h3>Languages</h3>
-    <ul>
-        <li>English</li>
-        <li>German</li>
-        <li>Russian</li>
-    </ul>
-    <button>Change user</button>
-    <script src="scripts/main.js"></script>
+    <div class="wrapper">
+      <header>
+        <a href="index.html">
+          <div class="header-content">
+            <!-- <img src="images/american-flag-png-circle-6-original.png" alt="Иконки стран">-->
+            <h1>Language cards</h1>
+          </a>
+        </div>
+      </header>
+
+      <nav>
+        <ul class="navigation-panel">
+          <li><a href="#">Home page</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+        <!-- 
+        <form>
+          <ul>
+            <li>Username: <input type="text"> </li>
+            <li>Password: <input type="password"></li>
+          </ul>
+          <input type="submit" value="Sign in">
+        </form>-->
+      </nav>
+
+      <main>
+        <article>
+          <h2>What it is?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+
+          <h3>Features</h3>
+          <dl>
+            <dt>Flexible</dt>
+            <dd>You can add words, that is neccesary for you.</dd>
+            <dt>Lot of languages</dt>
+            <dd>You can start learn any language and add words from vacabularies!</dd>
+          </dl>
+        </article>
+      </main>
+
+      <footer>
+        <p>©Авторские права никому не принадлежат, 2050. Все права защищены.</p>
+      </footer>
+  </div>
   </body>
-</html> 
+</html>
