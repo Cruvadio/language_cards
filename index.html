@@ -5,53 +5,32 @@
     <title>Главная страница</title>
     <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
     <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Poiret+One&family=Montserrat:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <a href="index.html">
-          <div class="header-content">
-            <!-- <img src="images/american-flag-png-circle-6-original.png" alt="Иконки стран">-->
-            <h1>Language cards</h1>
-          </a>
+
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__title">
+          Language cards
         </div>
-      </header>
+        <nav class="header__nav">
+          <a href="#" class="header__nav__link">Home</a>
+          <a href="#" class="header__nav__link">About us</a>
+          <a href="#" class="header__nav__link">Contact us</a>
+        </nav>
+      </div>
+    </header>
 
-      <nav>
-        <ul class="navigation-panel">
-          <li><a href="#">Home page</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-        <!-- 
-        <form>
-          <ul>
-            <li>Username: <input type="text"> </li>
-            <li>Password: <input type="password"></li>
-          </ul>
-          <input type="submit" value="Sign in">
-        </form>-->
-      </nav>
 
-      <main>
-        <article>
-          <h2>What it is?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+    <div class="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <h1 class="intro__title"> Which <b class="intro__b">words</b> would you like to train?</h1>
+          <a href="#" class="intro__button">Sign up</a>
+        </div>
+      </div>
+    </div>
 
-          <h3>Features</h3>
-          <dl>
-            <dt>Flexible</dt>
-            <dd>You can add words, that is neccesary for you.</dd>
-            <dt>Lot of languages</dt>
-            <dd>You can start learn any language and add words from vacabularies!</dd>
-          </dl>
-        </article>
-      </main>
-
-      <footer>
-        <p>©Авторские права никому не принадлежат, 2050. Все права защищены.</p>
-      </footer>
-  </div>
   </body>
 </html>
