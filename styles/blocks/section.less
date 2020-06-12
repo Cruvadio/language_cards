@@ -1,0 +1,83 @@
+// main: ../style.less
+
+.section{
+    
+    &::after {
+        margin-top: 6rem;
+        display: block;
+        content: "";
+        margin: 5.33rem auto;
+        width: 80%;
+        height: 0.2rem;
+        background-color: @color_link_hover;
+    }
+    &:first-of-type {
+        padding-top: 6rem;
+    }
+    
+    &:last-of-type {
+        padding-bottom: 6rem;
+    }
+    
+    &:last-of-type::after {
+        display: none;
+    }
+
+    @media @breakpoint_mobile {
+        padding: 1.33rem;
+    }
+
+    &--features
+    {
+        padding: 6rem 0;
+        background-image: url("@{img}features.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+}
+
+.section__title {
+    font-size: 2.66rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4.66rem;
+
+    &--features
+    {
+        color: white;
+    }
+
+    @media @breakpoint_mobile {
+        margin-bottom: 2rem;
+        font-size: 1.833rem;
+    }
+}
+
+.section__name {
+    font-family: @font_Lobster;
+    letter-spacing: 0.33rem;
+    color: @color_link;
+}
+
+.section__text {
+    font-family: @font_Roboto;
+    font-weight: 300;
+    opacity: 0.8;
+    padding: 0 4rem;
+    font-size: 1.66rem;
+    font-weight: 400;
+    text-indent: 2.66rem;
+    line-height: 1.8;
+    position: relative;
+
+    @media @breakpoint_wtablet {
+        font-size: 1.33rem;
+    }
+
+    @media @breakpoint_mobile {
+        font-size: 1.06rem;
+        padding: 0 0.66rem;
+    }
+}

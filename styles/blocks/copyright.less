@@ -1,0 +1,86 @@
+// main: ../style.less
+
+.copyright {
+    padding: 2rem 0;
+    background-color: darken(@color_footer_bg, 30%);
+}
+
+.copyright__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media @breakpoint_mobile {
+        justify-content: center;
+    }
+}
+
+.copyright__text {
+    font-family: @font_Roboto;
+    font-weight: 300;
+    color: white;
+
+    @media @breakpoint_mobile {
+        width: 100%;
+        flex: 100%;
+    }
+}
+
+.copyright__socials {
+    display: flex;
+    justify-items: center;
+
+    @media @breakpoint_mobile {
+        margin-top: 1rem;
+        width: 100%;
+        flex: 100%;
+    }
+}
+
+.socials__item {
+
+    margin: 0 0.66rem;
+    border: 1px solid white;
+        
+    color:white;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    transition: background 0.2s linear;
+
+    &--facebook{
+        background-color: @color_facebook;
+
+        &:hover
+        {
+            background-color: lighten(@color_facebook, 10%);
+        }
+    }
+    &--vk
+    {
+        background-color: @color_vk;
+
+        &:hover
+        {
+            background-color: lighten(@color_vk, 10%);
+        }
+    }
+
+    &--insta
+    {
+        background-image: linear-gradient(-135deg, @color_insta_1, @color_insta_2, @color_insta_3);
+
+        &:hover
+        {
+            background-image: linear-gradient(-135deg, lighten(@color_insta_1, 10%), lighten(@color_insta_2, 10%), lighten(@color_insta_3, 10%));
+        }
+    }
+
+    & > .fab{
+        margin: 11px auto;
+    }
+
+}

@@ -1,138 +1,187 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Главная страница</title>
-    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="images/favicon.svg" rel="icon" type="image/x-icon" />
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Poiret+One&family=Roboto:ital,wght@0,300;1,100;1,300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bf6f0091f2.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width">
-  </head>
-  <body>
+</head>
+
+<body>
 
     <header class="header">
-      <div class="header__inner">
-        <a class="header__title" href="#">
-          <i class="fas fa-language"></i>
-          Language cards
-        </a>
-        <nav class="header__nav">
-          <a href="#" class="header__nav__link">Home</a>
-          <a href="#" class="header__nav__link">About us</a>
-          <a href="#" class="header__nav__link">Contact us</a>
-        </nav>
-      </div>
+        <div class="header__inner">
+            <a class="header__title" href="#">
+                <i class="fas fa-language"></i> Language cards
+            </a>
+            <nav class="header__nav">
+                <a href="#" class="header__nav__link">Home</a>
+                <a href="#" class="header__nav__link">About us</a>
+                <a href="#" class="header__nav__link">Contact us</a>
+            </nav>
+        </div>
     </header>
 
     <div class="intro">
-      <div class="container">
-        <div class="intro__inner">
-          <h1 class="intro__title"> Which <b class="intro__b">words</b> would you like to train?</h1>
-          <a href="#" class="button">Sign up</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="container container--main">
-      <section class="section">
-
-        <h2 class="section__title">Welcome to <span class="section__name">language cards</span></h2>
-        <p class="section__text">Natoque nam sed blandit lacinia luctus ullamcorper etiam sagittis egestas massa interdum ut elementum in tristique elit urna convallis quis elementum eleifend faucibus. Platea ipsum tortor natoque. Vivamus curae; imperdiet penatibus. Bibendum taciti aenean dapibus non pretium risus suspendisse inceptos aptent mauris taciti semper ridiculus sem primis sit nostra mi nunc dolor ligula urna senectus phasellus suscipit pretium eleifend odio accumsan hac. Justo erat. Ipsum mus. Vehicula nisi fusce a platea felis bibendum curae; augue magnis mus nullam dui mi lacinia elit dictumst ipsum suspendisse. Hendrerit mollis placerat sodales primis venenatis dolor. Arcu massa. Elementum eu etiam hac adipiscing convallis.</p>
-
-      </section>
-    
-      <section class="section">
-        <h2 class="section__title">Facts that Make us  <span class="section__name">Unique</span></h2>
-        
-        <div class="features">
-        
-          <div class="feature__item">
-            <div class="feature__inner">
-              <div class="feature__icon">
-                <i class="fas fa-book-open"></i>
-              </div>
-              <div class="feature__title">Flexible</div>
-              <div class="feature__text">Vel proin iaculis placerat parturient sapien pharetra. Porttitor nam hymenaeos.</div>
-            </div>
-          </div>
-        
-          <div class="feature__item">
-            <div class="feature__inner">
-              <div class="feature__icon">
-                <i class="fas fa-language"></i>
-              </div>
-              <div class="feature__title">Many Languages</div>
-              <div class="feature__text">Vel proin iaculis placerat parturient sapien pharetra. Porttitor nam hymenaeos.</div>
-            </div>
-          </div>
-        
-          <div class="feature__item">
-            <div class="feature__inner">
-              <div class="feature__icon">
-                <i class="fas fa-comments"></i>
-              </div>
-              <div class="feature__title">Competitive</div>
-              <div class="feature__text">Vel proin iaculis placerat parturient sapien pharetra. Porttitor nam hymenaeos.</div>
-            </div>
-          </div>
-        
-        </div>
-        </section>
-      </div>
-
-      <footer class="footer">
         <div class="container">
-          <div class="footer__blocks">
-            <div class="footer__items">
+            <div class="intro__inner">
+                <h1 class="intro__title"> Which <b class="intro__b">words</b> would you like to train?</h1>
+                <a href="#" class="button button--intro">Join</a>
+            </div>
+        </div>
+    </div>
 
-              <div class="footer__item">
-                <div class="footer__title">
-                    Get in touch
+    <section class="section">
+        <div class="container">
+            <h2 class="section__title">Welcome to <span class="section__name">language cards</span></h2>
+            <p class="section__text">Natoque nam sed blandit lacinia luctus ullamcorper etiam sagittis egestas massa interdum ut elementum in tristique elit urna convallis quis elementum eleifend faucibus. Platea ipsum tortor natoque. Vivamus curae; imperdiet penatibus. Bibendum
+                taciti aenean dapibus non pretium risus suspendisse inceptos aptent mauris taciti semper ridiculus sem primis sit nostra mi nunc dolor ligula urna senectus phasellus suscipit pretium eleifend odio accumsan hac. Justo erat. Ipsum mus. Vehicula
+                nisi fusce a platea felis bibendum curae; augue magnis mus nullam dui mi lacinia elit dictumst ipsum suspendisse. Hendrerit mollis placerat sodales primis venenatis dolor. Arcu massa. Elementum eu etiam hac adipiscing convallis.</p>
+        </div>
+    </section>
+
+    <section class="section section--features">
+        <div class="container">
+            <h2 class="section__title section__title--features">Facts that Make us <span class="section__name">Unique</span></h2>
+            <div class="features">
+                <div class="feature__item">
+                    <div class="feature__inner">
+                        <div class="feature__icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="feature__title">Flexible</div>
+                        <div class="feature__text">Vel proin iaculis placerat parturient sapien pharetra. Porttitor nam hymenaeos.
+                        </div>
+                    </div>
+                </div>
+                <div class="feature__item">
+                    <div class="feature__inner">
+                        <div class="feature__icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="feature__title">Many Languages</div>
+                        <div class="feature__text">Vel proin iaculis placerat parturient sapien pharetra. Porttitor nam hymenaeos.
+                        </div>
+                    </div>
+                </div>
+                <div class="feature__item">
+                    <div class="feature__inner">
+                        <div class="feature__icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="feature__title">Competitive</div>
+                        <div class="feature__text">Vel proin iaculis placerat parturient sapien pharetra. Porttitor nam hymenaeos.
+                        </div>
+                    </div>
                 </div>
 
-                <div class="footer__info">
-                  0926k 4th block building,king Avenue,<br>
-
-                  New York City,USA <br>
-
-                  phone: +0444 555 6789<br>
-
-                  Fax: +0444 555 6789<br>
-
-                  Mail: info@example.com<br>
+                <div class="feature__item">
+                    <div class="feature__inner">
+                        <div class="feature__icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="feature__title">Competitive</div>
+                        <div class="feature__text">Vel proin iaculis placerat parturient sapien pharetra. Porttitor nam hymenaeos.
+                        </div>
+                    </div>
                 </div>
 
-              </div>
-
-              <div class="footer__item">
-                <div class="footer__title">
-                    About us
+                <div class="feature__item">
+                    <div class="feature__inner">
+                        <div class="feature__icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="feature__title">Competitive</div>
+                        <div class="feature__text">Vel proin iaculis placerat parturient sapien pharetra. Porttitor nam hymenaeos.
+                        </div>
+                    </div>
                 </div>
-
-                <div class="footer__info">
-                  Curabitur non nulla sit amet nislinit tempus convallis quis ac lectus. lac inia eget consectetur sed, convallis at tellus. Nulla porttitor accumsana tincidunt. Vestibulum ante ipsum primis tempus convallis.
-                </div>
-
-              </div>
             </div>
 
-            <div class="footer__items">
-              <div class="footer__item">
-                <div class="footer__title">Subscribe Our Newsletter</div>
-                <div class="footer__subscribe">
-                  <div class="footer__subscribe__item" id='footer__subscribe__first'>
-                    <input type="email" class="input" placeholder="Email Adress">
-                  </div>
-                  <div class="footer__subscribe__item">
-                    <button class="footer__button">Submit</button>
-                  </div>
+
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__blocks">
+                <div class="footer__items">
+
+                    <div class="footer__item">
+                        <div class="footer__title">
+                            Get in touch
+                        </div>
+
+                        <div class="footer__info">
+                            0926k 4th block building,king Avenue,<br> New York City,USA <br> phone: +0444 555 6789<br> Fax: +0444 555 6789<br> Mail: info@example.com<br>
+                        </div>
+
+                    </div>
+
+                    <div class="footer__item">
+                        <div class="footer__title">
+                            About us
+                        </div>
+
+                        <div class="footer__info">
+                            Curabitur non nulla sit amet nislinit tempus convallis quis ac lectus. lac inia eget consectetur sed, convallis at tellus. Nulla porttitor accumsana tincidunt. Vestibulum ante ipsum primis tempus convallis.
+                        </div>
+
+                    </div>
                 </div>
-              </div>
+
+                <div class="footer__items">
+                    <div class="footer__item">
+                        <div class="footer__title">Subscribe Our Newsletter</div>
+                        <div class="footer__subscribe">
+                            <div class="footer__subscribe__item" id='footer__subscribe__first'>
+                                <input type="email" class="input" placeholder="Email Adress">
+                            </div>
+                            <div class="footer__subscribe__item">
+                                <button class="button">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            
-          </div><!--.footer__blocks-->
-        </div> <!--.container-->
-      </footer>
-  </body>
+            <!--.footer__blocks-->
+
+
+        </div>
+        <!--.container-->
+    </footer>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright__items">
+                <div class="copyright__item">
+                    <div class="copyright__text">
+                        © 2018 Subject. All Rights Reserved
+                    </div>
+                </div>
+                <div class="copyright__item">
+                    <div class="copyright__socials">
+                        <a href="https://www.facebook.com/" class="socials__item socials__item--facebook" target="_blank">
+                            <i class="fab fa-facebook-f "></i>
+                        </a>
+                        <a href="https://www.instagram.com/cruvadio/" class="socials__item socials__item--insta" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://vk.com/deathly_hallowsp2" class="socials__item socials__item--vk" target="_blank">
+                            <i class="fab fa-vk"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>

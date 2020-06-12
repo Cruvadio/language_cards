@@ -1,5 +1,6 @@
-<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Poiret+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Poiret+One&family=Roboto:ital,wght@0,300;1,100;1,300&display=swap" rel="stylesheet">
 
 CSS:
 font-family: 'Caveat', cursive;
 font-family: 'Poiret One', cursive;
+font-family: 'Montserrat', sans-serif;

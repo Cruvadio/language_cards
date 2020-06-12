@@ -1,0 +1,95 @@
+// main: ../style.less
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:stretch;
+}
+
+.feature__item {
+    flex: 1 1 20%;
+    max-width: 28%;
+    margin: 0 1.33rem;
+    margin-bottom: 0.66rem;
+    text-align: center;
+    padding: 4rem;
+    background-color: white;
+    transition: background 0.2s linear, box-shadow 0.2s linear;
+
+    &:hover {
+        background-color: desaturate(@color_link, 20%);
+        box-shadow: 0 0 1rem darken(@color_card_bg, 20%);
+    }
+    
+    &:hover .feature__icon {
+        color: @color_link_hover;
+    }
+    
+    &:hover .feature__title,
+    &:hover .feature__text {
+        color: white;
+    }
+    
+    &:hover .feature__text {
+        opacity: 0.8;
+    }
+
+    @media @breakpoint_wtablet {
+        flex: 50%;
+        max-width: 50%;
+        margin-bottom: 0.66rem;
+    }
+
+    @media @breakpoint_ntablet
+    {
+        max-width: 100%;
+    }
+
+    @media @breakpoint_mobile
+    {
+        padding: 1.66rem;
+    }
+
+}
+
+.feature__title,
+.feature__icon,
+.feature__text {
+    transition: color 0.2s linear;
+}
+
+.feature__title {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 1.66rem;
+    @media @breakpoint_mobile
+    {
+        font-size: 1.2rem;
+    }
+}
+
+.feature__icon {
+    font-size: 2.66rem;
+    color: #f06659;
+    margin-bottom: 1.66rem;
+
+    @media @breakpoint_mobile
+    {
+        font-size: 1.66rem;
+    }
+}
+
+.feature__text {
+    font-family: @font_Roboto;
+    opacity: 0.8;
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    @media @breakpoint_mobile
+    {
+        font-size: 1rem;
+    }
+}
+
