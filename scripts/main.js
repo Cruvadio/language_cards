@@ -1,23 +1,48 @@
-var myImage = document.querySelector('img');
+$(function() {
 
-myImage.onclick = function() {
-    var mySrc = myImage.getAttribute('src');
-    if (mySrc == 'images/american-flag-png-circle-6-original.png') {
-        myImage.setAttribute('src', 'images/scale_1200.webp');
-    } else {
-        myImage.setAttribute('src', 'images/american-flag-png-circle-6-original.png')
+    var header = $('#header'),
+        introH = $('#intro').innerHeight(),
+        scrollOffset = $(window).scrollTop();
+
+    checkScroll(scrollOffset);
+
+    /* Fixed header */
+
+    $(window).on("scroll", function() {
+        scrollOffset = $(this).scrollTop();
+        checkScroll(scrollOffset)
+
+    });
+
+    function checkScroll(scrollOffset) {
+
+        if (scrollOffset >= introH) {
+            header.addClass("fixed");
+        } else {
+            header.removeClass("fixed");
+        }
     }
-}
 
-var myButton = document.querySelector('button');
-var myHeading = document.querySelector('h1');
+    /* Smooth scroll */
 
-function setUserName() {
-    var myName = prompt('Please enter your name.');
-    localStorage.setItem('name', myName);
-    myHeading.textContent = 'Welcome, ' + myName;
-}
+    $('[data-scroll]').on("click", function(event) {
+        event.preventDefault();
 
-myButton.onclick = function() {
-    setUserName();
-}
+        var blockID = $(this).data('scroll'),
+            blockOffset = $(blockID).offset().top;
+
+        $("html, body").animate({
+            scrollTop: blockOffset
+        }, Math.abs(blockOffset - scrollOffset) > 3000 ? 800 : 500);
+    });
+
+    /* Menu nav toggle */
+
+    $("#nav-toggle").on("click", function(event) {
+        event.preventDefault();
+
+        $(this).toggleClass("active");
+        header.toggleClass("active");
+    })
+
+});

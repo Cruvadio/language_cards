@@ -9,24 +9,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Poiret+One&family=Roboto:ital,wght@0,300;1,100;1,300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bf6f0091f2.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__inner">
             <a class="header__title" href="#">
                 <i class="fas fa-language"></i> Language cards
             </a>
             <nav class="header__nav">
-                <a href="#" class="header__nav__link">Home</a>
-                <a href="#" class="header__nav__link">About us</a>
-                <a href="#" class="header__nav__link">Contact us</a>
+                <a href="#" data-scroll="#intro" class="header__nav__link">Home</a>
+                <a href="#" data-scroll="#about" class="header__nav__link">About us</a>
+                <a href="#" data-scroll="#contact" class="header__nav__link">Contact us</a>
+                <a href="#" class="header__nav__link"><i class="fas fa-sign-in-alt"></i></a>
             </nav>
+            <button class="nav-toggle" id="nav-toggle" type="button">
+                <span class="nav-toggle__item">Menu</span>
+            </button>
+
         </div>
+
+
     </header>
 
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="container">
             <div class="intro__inner">
                 <h1 class="intro__title"> Which <b class="intro__b">words</b> would you like to train?</h1>
@@ -35,7 +43,7 @@
         </div>
     </div>
 
-    <section class="section">
+    <section class="section" id="about">
         <div class="container">
             <h2 class="section__title">Welcome to <span class="section__name">language cards</span></h2>
             <p class="section__text">Natoque nam sed blandit lacinia luctus ullamcorper etiam sagittis egestas massa interdum ut elementum in tristique elit urna convallis quis elementum eleifend faucibus. Platea ipsum tortor natoque. Vivamus curae; imperdiet penatibus. Bibendum
@@ -107,7 +115,7 @@
     </section>
 
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="container">
             <div class="footer__blocks">
                 <div class="footer__items">
@@ -182,6 +190,38 @@
             </div>
         </div>
     </div>
+
+    <div class="modal">
+        <div class="modal__dialog modal__dialog--auth">
+            <div class="auth">
+                <div class="auth__header">
+                    <h2 class="auth__header-title">Sign in</h2>
+                </div>
+
+                <div class="auth__form">
+                    <div class="auth__item">
+                        <div class="auth__item-title">
+                            Username:
+                        </div>
+                        <input type="text" class="auth__item-input">
+                    </div>
+
+                    <div class="auth__item">
+                        <div class="auth__item-title">
+                            Password:
+                        </div>
+                        <input type="password" class="auth__item-input">
+                    </div>
+                    <div class="auth__item ">
+                        <button class="button auth__item--btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+
 </body>
 
 </html>

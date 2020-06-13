@@ -1,0 +1,80 @@
+// main: ../style.less
+
+
+.auth
+{
+    width: 80%;
+    margin: 0 auto;
+    background-color: fade(white, 80%);
+    padding-top: 2rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.auth__header
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+}
+
+.auth__header-title
+{
+    font-size: 4rem;
+    letter-spacing: 2;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+    @media @breakpoint_mobile {
+        font-size: 2.5rem;
+    }
+}
+
+.auth__header-img
+{
+    width: 100%;
+    max-width: 170px;
+    margin: 0 auto;
+}
+
+.auth__form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+.auth__item
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 3rem;
+
+    &--btn
+    {
+        font-size: 1.2rem;
+    }
+}
+
+.auth__item-title
+{  
+    margin-right: 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    
+
+}
+
+.auth__item-input
+{
+    width: 100%;
+    max-width: 247px;
+    font:inherit;
+    padding: 0.46rem;
+}

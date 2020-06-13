@@ -1,4 +1,4 @@
-// compress: false
+// compress: true
 
 @import "var";
 
@@ -23,6 +23,11 @@ body {
     font-family: @font_Monserrat;
     /*background-image: url(../images/hypnotize.png);*/
     background-color: white;
+
+    &.no-scroll
+    {
+        overflow: hidden;
+    }
 }
 
 .input{
@@ -43,3 +48,5 @@ body {
 @import "blocks/features.less";
 @import "blocks/footer.less";
 @import "blocks/copyright.less";
+@import "blocks/modal.less";
+@import "blocks/auth.less";
